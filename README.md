@@ -3,7 +3,7 @@ i2pd Docker container
 
 Run I2P client in Docker container.
 
-Based on Debian Jessie. By default, builds i2pd from `master` git branch.
+By default, builds i2pd from `master` git branch.
 
 Usage
 -----
@@ -12,12 +12,10 @@ Install prerequisits and clone repository (on Ubuntu):
 
     sudo apt-get install git docker.io
     git clone https://github.com/l-n-s/i2pd-docker.git
-    cd i2pd-docker
-
-Customize `i2pd.conf` and `tunnels.conf` if you need to.
 
 Building image:
 
+    cd i2pd-docker/docker
     sudo docker build -t i2pd . 
 
 You can customize `GIT_BRANCH` and `GIT_TAG` arguments like this:
