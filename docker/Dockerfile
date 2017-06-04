@@ -1,6 +1,5 @@
 FROM alpine:latest
-# Maintained by Darknet Villain <supervillain@riseup.net>
-# Based on original Dockerfile by Mikal Villa <mikal@sigterm.no>
+LABEL authors "Mikal Villa <mikal@sigterm.no>, Darknet Villain <supervillain@riseup.net>"
 
 # Expose git branch, tag and URL variables as arguments
 ARG GIT_BRANCH="master"
